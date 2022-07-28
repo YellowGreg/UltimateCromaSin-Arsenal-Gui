@@ -19,7 +19,6 @@ local tab2 = window:Tab("Visual")
 local tab3 = window:Tab("LocalPlayers")
 local tab5 = window:Tab("CoolStuff")
 local tab6 = window:Tab("ArsenalHub")
-local tab4 = window:Tab("Credits")
 
 main:Label("Note: Some Script Will Sometimes Work")
 main:Label("Made By: AdvanceFalling Team")
