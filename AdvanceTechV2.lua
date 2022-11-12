@@ -359,33 +359,6 @@ local EzHook = loadstring(game:HttpGetAsync("https://pastebin.com/raw/3cCyS6GF")
 EzHook:HookIndex("Clips",function()end,workspace.Map)
 end)
 
-tab3:Button("Auto Heal", function()
-local player = game.Players.LocalPlayer
-
-game.StarterGui:SetCore("SendNotification", {
-Title = "Script";
-Text = "Script is on";
-Icon = "";
-Duration = 5;
-})
-
-function Health()
-   for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
-      if v.Name == "DeadHP" then
-          v.CFrame =  player.Character.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
-      end
-   end
-end
-
-while wait() do
-   if player.Character.Health.Value <= 99 then
-       Health()
-       print("Player has been given health!")
-   end
-   print("CHECKED")
-end
-end)
-
 tab:Button("Teleport to Random Player", function()
 local randomPlayer = Players:GetPlayers()[math.random(1, #Players:GetPlayers())]
 
@@ -1298,6 +1271,32 @@ end)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---LocalPlayers
 tab3:Label("Make yourself Overpowered")
+tab3:Button("Auto Heal", function()
+local player = game.Players.LocalPlayer
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Script";
+Text = "Script is on";
+Icon = "";
+Duration = 5;
+})
+
+function Health()
+   for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
+      if v.Name == "DeadHP" then
+          v.CFrame =  player.Character.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
+      end
+   end
+end
+
+while wait() do
+   if player.Character.Health.Value <= 99 then
+       Health()
+       print("Player has been given health!")
+   end
+   print("CHECKED")
+end
+end)
  
 tab3:Button("Ultra Speed", function()
 game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):GetPropertyChangedSignal("WalkSpeed"):Connect(function()
