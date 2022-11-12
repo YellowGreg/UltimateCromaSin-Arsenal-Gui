@@ -1254,7 +1254,7 @@ elseif Errored and not Success then
     print("!! IF THE ERROR IS A FALSE POSITIVE (says that a player cannot be found) THEN DO NOT BOTHER !!")
 end
 end)
-tabs2:Button("FullBright 2", function()
+tab2:Button("FullBright 2", function()
 local Light = game:GetService("Lighting")
 
 function dofullbright()
