@@ -12,7 +12,7 @@ local Section1 = Tab1:CreatsSection("Feature: More Script Added")
 local Section1 = Tab1:CreateSection("Feature: New Ui, Misc Tab")
 local Section2 = Tab2:CreateSection("Powerful Gun")
 local Section3 = Tab3:CreateSection("Esp")
-local Section4 = Tab4:NewSection("You Become Strong")
+local Section4 = Tab4:CreateSection("You Become Strong")
 local Section5 = Tab5:CreateSection("Useful Script")
 local Section6 = Tab6:CreateSection("Credit | Setting")
 
