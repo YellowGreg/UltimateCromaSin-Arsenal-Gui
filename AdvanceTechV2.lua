@@ -12,51 +12,6 @@ Duration = 8
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/YellowGreg/library-stuff/main/Ui', true))()
 local window = Library:Window('AdvanceTechV2 | Arsenal | V2')
 
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local NewGB = Instance.new("ScreenGui")
-local Watermark = Instance.new("ImageLabel")
-local HIDE = Instance.new("TextButton")
-local NOTE = Instance.new("TextLabel")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
-NewGB.ResetOnSpawn = false
-
---Properties:
-
-NewGB.Name = "NewGB"
-NewGB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-Watermark.Name = "Watermark"
-Watermark.Parent = NewGB
-Watermark.BackgroundColor3 = Color3.fromRGB(255, 34, 37)
-Watermark.BackgroundTransparency = 1.000
-Watermark.Position = UDim2.new(0.0431832187, 0, 0.0734394118, 0)
-Watermark.Size = UDim2.new(0.0616903156, 0, 0.122399017, 0)
-Watermark.Image = "rbxassetid://3570695787"
-Watermark.ImageColor3 = Color3.fromRGB(50, 76, 191)
-Watermark.ScaleType = Enum.ScaleType.Slice
-Watermark.SliceCenter = Rect.new(100, 100, 100, 100)
-Watermark.SliceScale = 0.120
-
-HIDE.Name = "HIDE"
-HIDE.Parent = Watermark
-HIDE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-HIDE.BackgroundTransparency = 1.000
-HIDE.Position = UDim2.new(0, 0, 0.239999995, 0)
-HIDE.Size = UDim2.new(1, 0, 0.5, 0)
-HIDE.Font = Enum.Font.SciFi
-HIDE.Text = "Hide GUI"
-HIDE.TextColor3 = Color3.fromRGB(0, 0, 0)
-HIDE.TextScaled = true
-HIDE.TextSize = 10.000
-HIDE.TextWrapped = true
-HIDE.MouseButton1Down:Connect(function()
-    Library:ToggleUI()
-end)
-
 local main = window:Tab("Main•Credit")
 local tab = window:Tab('Combat')
 local tab1 = window:Tab("ModGun")
