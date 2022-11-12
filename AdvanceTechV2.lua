@@ -148,7 +148,7 @@ end)
 
 RunService:BindToRenderStep("Dynamic Silent Aim", 120, GetClosestBodyPartFromCursor)
 end)
-end)
+
 
 tab:Button("Silent Aim 3", function()
 	local players = game:GetService("Players")
