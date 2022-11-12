@@ -10,7 +10,7 @@ Duration = 8
 })
 
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/YellowGreg/library-stuff/main/Ui', true))()
-local window = Library:Window('AdvanceTechV2 | Arsenal | V2')
+local window = Library:Window('AdvanceTech | Arsenal | V2')
 
 local main = window:Tab("Main•Credit")
 local tab = window:Tab('Combat')
