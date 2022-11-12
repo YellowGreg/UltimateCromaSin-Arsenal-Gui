@@ -1057,7 +1057,6 @@ _G.FullBrightExecuted = true
 _G.FullBrightEnabled = not _G.FullBrightEnabled
 end)
 
-
 tab2:Button("Esp 2", function()
 local function API_Check()
     if Drawing == nil then
@@ -1253,6 +1252,7 @@ elseif Errored and not Success then
     TestService:Message("The ESP script has errored, please notify Exunys with the following information :")
     warn(Errored)
     print("!! IF THE ERROR IS A FALSE POSITIVE (says that a player cannot be found) THEN DO NOT BOTHER !!")
+end
 end)
 
 tab2:Button("FullBright 2", function()
