@@ -4,14 +4,14 @@
 --We will do anything To give you the best script or Gui/Hub
 
 
-game:GetService("StarterGui"):SetCore("SendNotification",{ 	Title = "UCSHubV1 ",  	
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	Title = "Arsenal V1 ",  	
 Text = "Made By:AdvanceFalling Team",
 Icon = "rbxthumb://type=Asset&id=9863339777&w=150&h=150",
 Duration = 8
 })
 
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/YellowGreg/library-stuff/main/Ui', true))()
-local window = Library:Window('AdvanceTechV1 | Arsenal | V2')
+local window = Library:Window('AdvanceTech | Arsenal | V1')
 local main = window:Tab("Main•Credit")
 local tab = window:Tab('Combat')
 local tab1 = window:Tab("ModGun")
